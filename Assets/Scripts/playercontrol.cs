@@ -18,34 +18,34 @@ public class playercontrol : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            if (transform.position.x > -4)
-            {
+            //if (transform.position.x > -4)
+         //   {
                 rb.linearVelocity = new Vector2(-3, 0);
-            }
+          //  }
         }
 
         if (Input.GetKey(KeyCode.W))
         {
-            if (transform.position.y < 2)
-            {
+         //   if (transform.position.y < 2)
+         //   {
                 rb.linearVelocity = new Vector2(0, 3);
-            }
+          //  }
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            if (transform.position.x < 2)
-            {
+           // if (transform.position.x < 2)
+          //  {
                 rb.linearVelocity = new Vector2(3, 0);
-            }
+           // }
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            if (transform.position.y > -2)
-            {
+           // if (transform.position.y > -2)
+           // {
                 rb.linearVelocity = new Vector2(0, -3);
-            }
+           // }
         }
     }
 }
