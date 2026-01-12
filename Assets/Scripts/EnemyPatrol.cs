@@ -30,8 +30,7 @@ public class EnemyPatrol : MonoBehaviour
             return;
         }
 
-
-            MoveToWaypoint();
+        MoveToWaypoint();
     }
 
     void MoveToWaypoint()
@@ -40,7 +39,7 @@ public class EnemyPatrol : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
 
-        if(Vector2.Distance(transform.position, target.position) < 0.1f)
+        if (Vector2.Distance(transform.position, target.position) < 0.1f)
         {
             StartCoroutine(WaitAtWaypoint());
         }

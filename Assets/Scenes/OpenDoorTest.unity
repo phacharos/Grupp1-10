@@ -687,10 +687,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   speed: 2
   player: {fileID: 96844049}
-  waypointParent: {fileID: 1532806195}
-  moveSpeed: 2
-  waitTime: 0.1
-  loopWaypoints: 1
 --- !u!50 &1829452033
 Rigidbody2D:
   serializedVersion: 5
@@ -843,9 +839,6 @@ MonoBehaviour:
   moveSpeed: 2
   waitTime: 0.1
   loopWaypoints: 1
-  waypoints: []
-  currentWaypointIndex: 0
-  isWaiting: 0
 --- !u!1 &2028035750
 GameObject:
   m_ObjectHideFlags: 0
