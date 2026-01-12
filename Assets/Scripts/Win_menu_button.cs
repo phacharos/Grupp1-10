@@ -11,10 +11,10 @@ public class Win_menu_button : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*public void NextScene()
-         {
-             SceneManager.LoadScene("");
-          }*/
-
+        public void NextScene()
+    {
+        SceneManager.LoadScene("");
     }
+
+}
 }
