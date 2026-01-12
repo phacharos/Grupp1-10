@@ -21,6 +21,8 @@ public class PlayerAttack : MonoBehaviour
             Vector3 dirToMouse = Input.mousePosition - posInScreen;
             dirToMouse.Normalize();
             rb.AddForce(dirToMouse * thrust, ForceMode2D.Impulse);
+
+            rb.linearDamping = 3;
         }
     }
 }
