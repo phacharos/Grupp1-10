@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class interaction : MonoBehaviour
 {
-    bool IsPlayerNear = false;
+    // Här försöker jag göra UI för knappet E när spelaren är nära glass/ så att spelaren vet vad ska hen göra.
+
+
+    //bool IsPlayerNear = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
