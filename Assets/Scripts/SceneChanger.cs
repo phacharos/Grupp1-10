@@ -1,14 +1,26 @@
+using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneChanger : MonoBehaviour
 {
+    Button btn;
+    
     public string nextSceneName;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        btn = GetComponent<Button>();
+
+        if (btn != null)
+        {
+            btn.onClick.AddListener(() =>
+            {
+                ChangeSceneTo();
+            });
+        }
     }
 
     // Update is called once per frame
@@ -17,11 +29,15 @@ public class SceneChanger : MonoBehaviour
         
     }
 
+    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<Rigidbody2D>() != null)
-        {
-            SceneManager.LoadScene(nextSceneName);
-        }
+            ChangeSceneTo();
+    }
+
+    public void ChangeSceneTo()
+    {
+        SceneManager.LoadScene(nextSceneName);
     }
 }
