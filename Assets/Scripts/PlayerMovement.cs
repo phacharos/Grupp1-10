@@ -35,6 +35,7 @@ public class test : MonoBehaviour
             rb.linearVelocityX = -speed;
         }
 
+
         if (Input.GetKeyUp(KeyCode.W))
         {
             rb.linearVelocityY = 0;
