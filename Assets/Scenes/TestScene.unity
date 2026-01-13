@@ -490,7 +490,6 @@ GameObject:
   m_Component:
   - component: {fileID: 938141470}
   - component: {fileID: 938141469}
-  - component: {fileID: 938141468}
   - component: {fileID: 938141471}
   - component: {fileID: 938141472}
   - component: {fileID: 938141473}
@@ -502,18 +501,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &938141468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938141467}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32f64ae2f7206d240b1cf5203520a832, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::playercontrol
 --- !u!212 &938141469
 SpriteRenderer:
   m_ObjectHideFlags: 0
