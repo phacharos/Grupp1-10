@@ -5,6 +5,8 @@ public class Puzzle2 : MonoBehaviour
     [SerializeField] int nextbutton;
     [SerializeField] GameObject GamePanel;
     [SerializeField] GameObject[] myObject;
+    public GameObject Exitdoor;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -38,10 +40,9 @@ public class Puzzle2 : MonoBehaviour
 
         if (button == 8 && button == nextbutton)
         {
-            Debug.Log("Pass");
+            Debug.Log("Pass & the exit has opened");
+            GamePanel.SetActive(false);
             nextbutton = 0;
-            ButtonPanelClose();
-
         }
     }
 
