@@ -30,13 +30,6 @@ public class PuzzleDetector : MonoBehaviour
             EvenSystem.SetActive(false);
         }
     }
-    // Update is called once per frame
-    void Update()
-    {
-
-
-
-    }
 
 
 }
