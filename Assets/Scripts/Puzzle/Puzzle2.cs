@@ -40,7 +40,8 @@ public class Puzzle2 : MonoBehaviour
         {
             Debug.Log("Pass");
             nextbutton = 0;
-            GamePanel.SetActive(false);
+            ButtonPanelClose();
+
         }
     }
 
@@ -48,6 +49,7 @@ public class Puzzle2 : MonoBehaviour
     public void ButtonPanelClose()
     {
         GamePanel.SetActive(false);
+
     }
 
     public void ButtonPanelOpen()
