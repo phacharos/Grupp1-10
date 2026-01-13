@@ -30,8 +30,11 @@ public class PlayerAttack : MonoBehaviour
                 timeStamp = Time.time + 3;
             }
         }
-        
-
-
     }
-}
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
+}   
+
