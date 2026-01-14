@@ -7,6 +7,7 @@ public class EnemyShooting : MonoBehaviour
     public Transform bulletPos;
     Animator animator;
 
+
     private float timer;
     private GameObject player;
 
@@ -45,9 +46,16 @@ public class EnemyShooting : MonoBehaviour
             GetComponent<EnemyPatrol>().enabled = true;
 
         }
+
+        //Destroy the bullets
+        //if (bullet.transform.position.y <= 20 || bullet.transform.position.y >= -20 || bullet.transform.position.x >= -30 || bullet.transform.position.x <= 20)
+        {
+            //Destroy(GameObject.CompareTag("EnemyBullet");
+        }
     }
     void shoot()
     {
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
+
     }
 }

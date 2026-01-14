@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Glasswall
   - Exitdoor
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX

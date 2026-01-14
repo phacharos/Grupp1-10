@@ -38,7 +38,7 @@ public class Puzzle2 : MonoBehaviour
             nextbutton = 0;
             OnEnable();//reset the game
         }
-        if (button == 8)// idk why it does NOT work!!!
+        if (button == 8 && nextbutton == 9)// It is working rn
         {
             Debug.Log("Pass & the exit has opened");
             nextbutton = 0;
