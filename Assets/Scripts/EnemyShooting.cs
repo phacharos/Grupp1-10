@@ -15,7 +15,7 @@ public class EnemyShooting : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        animator.GetComponent<Animator>();
+        animator.GetComponent<Animator>();//adda animation
     }
 
     void Update()
@@ -36,7 +36,7 @@ public class EnemyShooting : MonoBehaviour
             {
                 timer = 0;
                 shoot();
-                animator.Play("EnemyAttact");
+                animator.Play("EnemyAttact");//kör attack animation när den attackera
             }
         }
         // kan tas bort, gör att den går tillbaka till patrull
