@@ -21,11 +21,16 @@ public class EnemyHealth : MonoBehaviour
 
     public void Hurt(int amount)
     {
-        Ehealth -= amount;
-
-        if (Ehealth <= 0)
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerAttack>().attacking)
         {
-            Destroy(gameObject);
-        } 
+            Ehealth -= amount;
+
+            if (Ehealth <= 0)
+            {
+                Destroy(gameObject);
+            }
+        }
+        
+        
     }
 }
