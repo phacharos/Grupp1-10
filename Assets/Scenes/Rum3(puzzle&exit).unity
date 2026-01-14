@@ -2863,9 +2863,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1665588684}
   - component: {fileID: 1665588683}
-  - component: {fileID: 1665588682}
   - component: {fileID: 1665588681}
   - component: {fileID: 1665588680}
+  - component: {fileID: 1665588685}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2946,18 +2946,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1665588682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665588679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32f64ae2f7206d240b1cf5203520a832, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!212 &1665588683
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3032,6 +3020,18 @@ Transform:
   - {fileID: 1177957220}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1665588685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665588679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2070a36e703ece5418830fee828ac552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::test
 --- !u!1 &1857235728
 GameObject:
   m_ObjectHideFlags: 0
