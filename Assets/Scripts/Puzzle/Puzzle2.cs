@@ -5,6 +5,9 @@ public class Puzzle2 : MonoBehaviour
     [SerializeField] int nextbutton;
     [SerializeField] GameObject GamePanel;
     [SerializeField] GameObject[] myObject;
+    public GameObject Exitdoor;
+    public GameObject StartButton;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -35,12 +38,14 @@ public class Puzzle2 : MonoBehaviour
             nextbutton = 0;
             OnEnable();//reset the game
         }
-
-        if (button == 8 && button == nextbutton)
+        if (button == 8)// idk why it does NOT work!!!
         {
-            Debug.Log("Pass");
+            Debug.Log("Pass & the exit has opened");
             nextbutton = 0;
-            ButtonPanelClose();
+            GamePanel.SetActive(false);
+            Destroy(GamePanel);
+            Destroy(Exitdoor);
+            Destroy(StartButton);
 
         }
     }
@@ -49,7 +54,6 @@ public class Puzzle2 : MonoBehaviour
     public void ButtonPanelClose()
     {
         GamePanel.SetActive(false);
-
     }
 
     public void ButtonPanelOpen()

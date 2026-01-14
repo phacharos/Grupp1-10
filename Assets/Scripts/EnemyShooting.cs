@@ -5,6 +5,7 @@ public class EnemyShooting : MonoBehaviour
 
     public GameObject bullet;
     public Transform bulletPos;
+    Animator animator;
 
     private float timer;
     private GameObject player;
@@ -14,6 +15,7 @@ public class EnemyShooting : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        animator.GetComponent<Animator>();
     }
 
     void Update()
@@ -22,7 +24,7 @@ public class EnemyShooting : MonoBehaviour
         float distance = Vector2.Distance(transform.position, player.transform.position);
         Debug.Log(distance);
 
-        if(distance < 5)
+        if (distance < 5)
         {
             timer += Time.deltaTime;
 
@@ -34,12 +36,14 @@ public class EnemyShooting : MonoBehaviour
             {
                 timer = 0;
                 shoot();
+                animator.Play("EnemyAttact");
             }
         }
         // kan tas bort, gör att den går tillbaka till patrull
         else
         {
             GetComponent<EnemyPatrol>().enabled = true;
+
         }
     }
     void shoot()
