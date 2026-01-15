@@ -1,11 +1,8 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Win_menu_button : MonoBehaviour
 {
-    public void NextScene()
-    {
-      //  SceneManager.LoadScene("");
-    }
 
     // Update is called once per frame
     void Update()
@@ -14,6 +11,7 @@ public class Win_menu_button : MonoBehaviour
     }
     public void NextScene()
     {
+        Debug.Log("Button Worked");
         SceneManager.LoadScene("StartSceneTest");
     }
 
