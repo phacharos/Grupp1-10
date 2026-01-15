@@ -35,24 +35,25 @@ public class test : MonoBehaviour
             rb.linearVelocityX = -speed;
         }
 
+
         if (Input.GetKeyUp(KeyCode.W))
         {
-            rb.linearVelocityY = 0;
+            rb.linearDamping = 10;
         }
 
         if (Input.GetKeyUp(KeyCode.S))
         {
-            rb.linearVelocityY = 0;
+            rb.linearDamping = 10;
         }
 
         if (Input.GetKeyUp(KeyCode.D))
         {
-            rb.linearVelocityX = 0;
+            rb.linearDamping = 10;
         }
 
         if (Input.GetKeyUp(KeyCode.A))
         {
-            rb.linearVelocityX = 0;
+            rb.linearDamping = 10;
         }
     }
 }
