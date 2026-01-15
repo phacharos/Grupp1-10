@@ -1,5 +1,4 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
@@ -13,8 +12,12 @@ public class EnemyPatrol : MonoBehaviour
     private int currentWaypointIndex;
     private bool isWaiting;
 
+    Animator animator;
+
     void Start()
+
     {
+        animator = GetComponent<Animator>();//adda animation
         waypoints = new Transform[waypointParent.childCount];
 
         for (int i = 0; i < waypointParent.childCount; i++)
@@ -42,6 +45,7 @@ public class EnemyPatrol : MonoBehaviour
         if (Vector2.Distance(transform.position, target.position) < 0.1f)
         {
             StartCoroutine(WaitAtWaypoint());
+            animator.Play("EnemyWalk");//adda går animation 
         }
     }
 
