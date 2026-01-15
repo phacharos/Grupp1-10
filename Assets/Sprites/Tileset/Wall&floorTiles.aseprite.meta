@@ -152,7 +152,7 @@ ScriptedImporter:
   tileSetImportData:
   - name: Layer 1
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.8}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -226,5 +226,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 128, y: 80}
+  canvasSize: {x: 128, y: 128}
   previousTextureSize: {x: 128, y: 128}

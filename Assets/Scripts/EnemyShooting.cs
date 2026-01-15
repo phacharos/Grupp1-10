@@ -5,25 +5,25 @@ public class EnemyShooting : MonoBehaviour
 
     public GameObject bullet;
     public Transform bulletPos;
-    Animator animator;
-
 
     private float timer;
     private GameObject player;
 
     public float speed = 1.5f;
+    public Animator animator;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        animator.GetComponent<Animator>();//adda animation
+
     }
+
+
 
     void Update()
     {
 
         float distance = Vector2.Distance(transform.position, player.transform.position);
-        Debug.Log(distance);
 
         if (distance < 5)
         {
@@ -37,25 +37,16 @@ public class EnemyShooting : MonoBehaviour
             {
                 timer = 0;
                 shoot();
-                animator.Play("EnemyAttact");//kör attack animation när den attackera
             }
         }
         // kan tas bort, gör att den går tillbaka till patrull
         else
         {
             GetComponent<EnemyPatrol>().enabled = true;
-
-        }
-
-        //Destroy the bullets
-        //if (bullet.transform.position.y <= 20 || bullet.transform.position.y >= -20 || bullet.transform.position.x >= -30 || bullet.transform.position.x <= 20)
-        {
-            //Destroy(GameObject.CompareTag("EnemyBullet");
         }
     }
     void shoot()
     {
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
-
     }
 }

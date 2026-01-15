@@ -1,7 +1,4 @@
-using TreeEditor;
-using Unity.Mathematics;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
 public class EnemyBullet : MonoBehaviour
 {
@@ -31,7 +28,7 @@ public class EnemyBullet : MonoBehaviour
 
         if (timer > 10)
         {
-
+            Destroy(gameObject);
         }
     }
 
