@@ -42,10 +42,10 @@ public class Puzzle2 : MonoBehaviour
         {
             Debug.Log("Pass & the exit has opened");
             nextbutton = 0;
-            GamePanel.SetActive(false);
-            Destroy(GamePanel);
-            Destroy(Exitdoor);
-            Destroy(StartButton);
+            ButtonPanelClose();//stänga av Gamepanel/puzzle
+            Destroy(StartButton);//förstör startbutton så att spelaren ska inte interact med mer YIPPEE
+            Destroy(Exitdoor);//förstör dörren
+
 
         }
     }
