@@ -1,14 +1,15 @@
 using UnityEngine;
 
-public class HurtEnemy : MonoBehaviour
+public class SelfDestruct : MonoBehaviour
 {
+    //För player projectile
 
-    int hurtAmount = 1;
+    public float time;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Destroy(gameObject, time);
     }
 
     // Update is called once per frame
@@ -19,16 +20,9 @@ public class HurtEnemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        EnemyHealth Ehealth = collision.GetComponent<EnemyHealth>();
-
-        if (Ehealth == null)
+        if (collision.gameObject.tag != "Player")
         {
-            return;
+            Destroy(gameObject);
         }
-
-        Ehealth.Hurt(hurtAmount);
-        Destroy(gameObject);
     }
-
-    
 }

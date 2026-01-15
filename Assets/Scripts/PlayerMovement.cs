@@ -3,7 +3,7 @@ using UnityEngine;
 public class test : MonoBehaviour
 {
     Rigidbody2D rb;
-    int speed = 4;
+    int speed = 2;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

@@ -1,10 +1,14 @@
 using UnityEngine;
+using UnityEngine.LowLevelPhysics;
 
 public class InteractingE : MonoBehaviour
 {
     //Makes "trigger active" buttom appear on the inspector (:O
     [SerializeField] bool TriggerActive = false;
     SpriteRenderer SR;
+
+    public Sprite CageDestroy;
+    public GameObject Cage;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -55,6 +59,9 @@ public class InteractingE : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && TriggerActive)
         {
+            Cage.GetComponent<SpriteRenderer>().sprite = CageDestroy;
+            Cage.GetComponent<SpriteRenderer>().sortingOrder = -1;
+
             Action();
         }
 
