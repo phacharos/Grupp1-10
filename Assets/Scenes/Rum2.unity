@@ -366,7 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 038776f008263bd439afb36c8df97d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyShooting
-  bullet: {fileID: 427523412996796698, guid: d4b881a15b8780a409d6401207eb1bc5, type: 3}
+  bullet: {fileID: 3802539160003487865, guid: 0634760eb0557f94a9fbb5b3fce6d802, type: 3}
   bulletPos: {fileID: 534812180}
   speed: 1.5
 --- !u!114 &192138421
@@ -910,7 +910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 038776f008263bd439afb36c8df97d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyShooting
-  bullet: {fileID: 427523412996796698, guid: d4b881a15b8780a409d6401207eb1bc5, type: 3}
+  bullet: {fileID: 3802539160003487865, guid: 0634760eb0557f94a9fbb5b3fce6d802, type: 3}
   bulletPos: {fileID: 1078433963}
   speed: 1.5
 --- !u!114 &1119939373
