@@ -27,6 +27,6 @@ public class HurtEnemy : MonoBehaviour
         }
 
         Ehealth.Hurt(hurtAmount);
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 }

@@ -632,6 +632,7 @@ GameObject:
   - component: {fileID: 938141473}
   - component: {fileID: 938141474}
   - component: {fileID: 938141475}
+  - component: {fileID: 938141476}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -738,7 +739,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &938141472
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -822,6 +823,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cc6264bab26278459ed4bba686e6219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HurtEnemy
+--- !u!114 &938141476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938141467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258ff083a3b30e549b6882dbe1fd03b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerShoot
+  projectile: {fileID: 7435248629358288305, guid: b855381260ae76c4da57a3754188a57a, type: 3}
+  projectilePos: {fileID: 938141470}
 --- !u!1 &974647681
 GameObject:
   m_ObjectHideFlags: 0
