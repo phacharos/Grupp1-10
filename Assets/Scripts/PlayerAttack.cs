@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
 
-    Rigidbody2D rb;
+   /* Rigidbody2D rb;
     float thrust = 6.0f;
     float timeStamp;
     public bool attacking = false;
@@ -50,6 +50,6 @@ public class PlayerAttack : MonoBehaviour
             GetComponent<test>().enabled = true;
             GetComponent<HurtEnemy>().enabled = false;
         }
-    }
+    }*/
 }   
 
