@@ -7,6 +7,7 @@ public class Puzzle2 : MonoBehaviour
     [SerializeField] GameObject[] myObject;
     public GameObject Exitdoor;
     public GameObject StartButton;
+    public GameObject Detector;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -45,7 +46,7 @@ public class Puzzle2 : MonoBehaviour
             ButtonPanelClose();//stänga av Gamepanel/puzzle
             Destroy(StartButton);//förstör startbutton så att spelaren ska inte interact med mer YIPPEE
             Destroy(Exitdoor);//förstör dörren
-
+            Destroy(Detector);//förstör Puzzledetector
 
         }
     }

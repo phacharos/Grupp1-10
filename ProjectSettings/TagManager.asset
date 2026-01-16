@@ -50,5 +50,8 @@ TagManager:
   - name: Foreground
     uniqueID: 4782481
     locked: 0
+  - name: some props
+    uniqueID: 3203838603
+    locked: 0
   m_RenderingLayers:
   - Default
