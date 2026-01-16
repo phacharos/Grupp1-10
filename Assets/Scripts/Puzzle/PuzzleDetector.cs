@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PuzzleDetector : MonoBehaviour
 {
-    //bool IsPlayerNear = false;
+    bool IsPlayerNear = false;
     public GameObject StartButton;
     public GameObject EvenSystem;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,7 +15,7 @@ public class PuzzleDetector : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            //IsPlayerNear = true;
+            IsPlayerNear = true;
             StartButton.SetActive(true);
             EvenSystem.SetActive(true);
         }
@@ -25,10 +25,21 @@ public class PuzzleDetector : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            //IsPlayerNear = false;
+            IsPlayerNear = false;
             StartButton.SetActive(false);
             EvenSystem.SetActive(false);
         }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && IsPlayerNear == true)
+        {
+            StartButton.SetActive(true);
+            EvenSystem.SetActive(true);
+        }
+
+
     }
 
 
