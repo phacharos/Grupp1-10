@@ -21,7 +21,7 @@ public class PlayerShoot : MonoBehaviour
     {
         if (timeStamp <= Time.time)
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Mouse0))
             {
                 
                 Vector3 posInScreen = Camera.main.WorldToScreenPoint(transform.position);
@@ -30,14 +30,9 @@ public class PlayerShoot : MonoBehaviour
                 GameObject project = Instantiate(projectile, projectilePos.position, Quaternion.identity);
                 project.GetComponent<Rigidbody2D>().linearVelocity = dirToMouse * thrust;
 
-
                 timeStamp = Time.time + 0.5f;
             }
-
-
         }
-
     }
-    
 }
 
