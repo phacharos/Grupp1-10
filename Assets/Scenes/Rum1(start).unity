@@ -615,7 +615,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.48334336, y: 2.04822, z: -3}
+  m_LocalPosition: {x: -0.854038, y: 2.04827, z: -3}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4542,6 +4542,7 @@ GameObject:
   - component: {fileID: 1885148003}
   - component: {fileID: 1885147998}
   - component: {fileID: 1885148002}
+  - component: {fileID: 1885148004}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4707,6 +4708,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2070a36e703ece5418830fee828ac552, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::test
+--- !u!114 &1885148004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885147997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258ff083a3b30e549b6882dbe1fd03b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerShoot
+  projectile: {fileID: 7435248629358288305, guid: b855381260ae76c4da57a3754188a57a, type: 3}
+  projectilePos: {fileID: 1885148001}
 --- !u!1 &1891990205
 GameObject:
   m_ObjectHideFlags: 0
