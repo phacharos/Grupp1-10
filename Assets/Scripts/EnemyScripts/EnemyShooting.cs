@@ -12,6 +12,8 @@ public class EnemyShooting : MonoBehaviour
     public float speed = 1.5f;
     public Animator animator;
 
+    public AudioSource pewpew;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -37,6 +39,7 @@ public class EnemyShooting : MonoBehaviour
             {
                 timer = 0;
                 shoot();
+                pewpew.Play();
             }
         }
         // kan tas bort, gör att den går tillbaka till patrull
