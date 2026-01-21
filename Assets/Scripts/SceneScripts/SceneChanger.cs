@@ -5,13 +5,14 @@ using UnityEngine.UI;
 
 public class SceneChanger : MonoBehaviour
 {
-    Button btn;
+   // Button btn;
     
     public string nextSceneName;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        /*
         btn = GetComponent<Button>();
 
         if (btn != null)
@@ -21,6 +22,7 @@ public class SceneChanger : MonoBehaviour
                 ChangeSceneTo();
             });
         }
+        */
     }
 
     // Update is called once per frame
@@ -33,7 +35,10 @@ public class SceneChanger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.tag == "Player")
+        {
             ChangeSceneTo();
+        }
     }
 
     public void ChangeSceneTo()
