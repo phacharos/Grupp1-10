@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Rum3(puzzle&exit).unity
     guid: d249e3a4eea58d04fa06d5aa2beb130b
   - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: 87db79a4d0f42ab478e20dde07d1c305
+  - enabled: 1
     path: Assets/Scenes/VinnerScen.unity
     guid: 9f9edaf86693fb04d9ce959cfba718ae
   - enabled: 0
